@@ -8,7 +8,6 @@ FROM dhi.io/node:26-alpine3.24-dev AS builder
 # Set the working directory inside the container
 WORKDIR /app
 
-
 # Copy package-related files first to leverage Docker's caching mechanism
 COPY package*.json ./
 
